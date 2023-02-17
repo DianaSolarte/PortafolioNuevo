@@ -2,6 +2,7 @@ body {
     background-image: url('ImagenDeFondo.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    justify-content: center;
 }
 
 
@@ -24,7 +25,20 @@ body {
     color: #fff!important;
 }
 
-.footer {
-    background: rgb(179,1,255) !important;
-    background: linear-gradient(347deg, rgba(179,1,255,1) 70%, rgba(179,1,255,1) 70%);
+section.footer {
+    margin-top: 100px;
+    background: linear-gradient(90deg, rgba(179, 1, 255, 0.77) 0%, rgba(179, 1, 255, 0.7) 100%)!important;
+
+}
+div.container{
+    float: left;
+    margin-right: 10px;
+
+}
+i{
+    color:#fff;
+    font-size:30px;
+    float: left;
+    align-items: right;
+    margin-right: 10px;
 }
