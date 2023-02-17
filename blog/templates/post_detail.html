@@ -1,10 +1,11 @@
 {% extends 'layout.html' %}
     {% block content %}
-        <h1 style="color:#ffff">Post</h1>
-
-        <h2 style="color:#ffff">{{post.title}}</h2>
-        <h4 style="color:#ffff">{{post.date}}</h4>
-
-        <p style="color:#ffff" >{{post.description|safe}}</p>
-        <img src ="{{post.image.url}}" alt="{{post.title}}">
-    {% endblock %}
+    <div class="card">
+        <div class="card-body" style="margin: 5px 25px 5px 25px">
+          <h5 class="card-title">{{post.title}}</h5>
+          <p class="card-text">{{post.date}}</p>
+          <p class="card-text"><small class="text-muted">{{post.description|safe}}</small></p>
+        </div>
+        <img src="{{post.image.url}}" width="100px" class="card-img-top img-fluid" alt="{{post.title}}">
+      </div>
+        {% endblock %}
